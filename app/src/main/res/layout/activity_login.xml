@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="232dp"
+        android:layout_height="49dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="239dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="276dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/reg"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="148dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb" />
+
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="@string/signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toEndOf="@+id/log"
+        app:layout_constraintTop_toBottomOf="@+id/cb" />
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="147dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/stay"
+        android:textColor="#4a4a4a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
